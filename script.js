@@ -1,4 +1,4 @@
-let image = document.getElementById("image")
+let object = document.getElementById("object")
 // let product = [];
 fetch("https://dummyjson.com/products").then(result => result.json()).then(jumia => {
     console.log(jumia);
@@ -7,13 +7,14 @@ fetch("https://dummyjson.com/products").then(result => result.json()).then(jumia
     let proDuct = "";
 
     products.forEach(prod => {
-        proDuct +=
-            `<div id="prod">
-        <h6>${prod.description}</h6> ;
-        <h6>${prod.title}<h6>
-        <img src ="${prod.thumbnail}" alt ="${prod.title}"
+        proDuct += ""
+        proDuct += ` <div class="prod">
+        <div id="root">
+         <img src ="${prod.thumbnail}" width="180" height="120"
+         <div><p id="color">${prod.brand}</p></div>
+         </div>
         </div>`
     });
-    document.body.innerHTML += proDuct;
+    object.innerHTML += proDuct;
     console.log(proDuct);
 })

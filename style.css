@@ -1,5 +1,13 @@
-body{
+/* body{
     background-color: rgb(150,206,199) !important;
+} */
+
+body {
+    background-image: url(BG_TAKEOVER.jpg);
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* height: fit-content; */
 }
 
 nav {
@@ -9,19 +17,19 @@ nav {
     z-index: 6;
 }
 
-#stick{
+#stick {
     height: 1.5em;
     width: 100%;
-    background-color: rgb(241,241,242);
+    background-color: rgb(241, 241, 242);
 }
 
-#advert img{
+#advert img {
     height: 4em;
     width: 100%;
 }
 
-#jumia{
-    height: 4em;
+#jumia {
+    height: 5em;
     width: 100%;
     background-color: white;
     /* position: sticky ;
@@ -30,7 +38,7 @@ nav {
     z-index: 5; */
 }
 
-#Align{
+#Align {
     /* padding-top: -60px; */
     /* padding-top: -50px; */
     display: flex;
@@ -38,12 +46,12 @@ nav {
     justify-content: space-around;
 }
 
-#logo img{
+#logo img {
     height: 5em;
     width: 9em;
 }
 
-.div{
+.div {
     height: 2.5em;
     width: 40%;
     background-color: white;
@@ -53,34 +61,38 @@ nav {
     padding: 0 10px 0 8px;
 }
 
-#inpts input{
+#inpts input {
     height: 2.5em;
-    width: 30em;
+    width: 250%;
     background: transparent;
     border: none;
     outline: none;
 }
 
-.searchs button{
+.searchs button {
     height: 2.5em;
+    padding: 0 15px 0 15px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(246,139,30);
+    background-color: rgb(246, 139, 30);
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#right{
+#right {
     width: 20em;
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
 }
 
-#right button{
+#right button {
     height: 2.5em;
     border: none;
     background: transparent;
     font-size: 17px;
+    padding: 0 0 0 20px;
+
 }
 
 #one {
@@ -88,17 +100,17 @@ nav {
     width: 100%;
 }
 
-#flexs{
+#flexs {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     /* justify-content: center !important; */
-    margin-top: 20px !important ;
+    margin-top: 20px !important;
     margin: auto;
     width: 90%;
 }
 
-#first{
+#first {
     height: 25em;
     /* width: 5em; */
     background-color: white;
@@ -107,9 +119,9 @@ nav {
     border-radius: 5px;
 }
 
-#second{
+#second {
     height: 25em;
-    width: 25em ;
+    width: 25em;
     /* background-color: red; */
     background-image: url(Desktop_Homepage_Slider__712x384.jpg);
     flex-grow: 1;
@@ -118,13 +130,7 @@ nav {
     background-size: cover;
 }
 
-/* #second img{
-    height: 25em;
-    width: 40em ;
-    border-radius: 5px;
-} */
-
-#third{
+#third {
     height: 12em;
     /* width: 5em; */
     background-color: white;
@@ -133,7 +139,7 @@ nav {
     border-radius: 5px;
 }
 
-#thirdd{
+#thirdd {
     height: 12em;
     margin-top: 13em;
     /* background-color: white; */
@@ -144,16 +150,41 @@ nav {
     border-radius: 5px;
 }
 
-/* #prod{
-    height: fit-content;
-    width: 60%;
-    background-color: red;
+#object {
+    background-color: white;
+    width: 82%;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    text-align: center;
 }
 
-#prod img{
-    height: 50px;
-    width: 10%;
-    background-color: red;
-} */
+#object::-webkit-scrollbar{
+    display: none;
+}
 
+.prod {
+    flex-grow: 1;
+    flex-basis: 200;
+}
 
+#root {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(152,209,202);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#color {
+    color: rgb(42, 38, 38);
+    font-weight: 500;
+}
+
+#root:hover {
+    transition: 2ms;
+    transform: scale(1.02);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
