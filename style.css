@@ -77,10 +77,16 @@ nav {
     background-color: rgb(246, 139, 30);
     color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 0 0 -55px;
+}
+
+.searchs button:hover{
+    background-color: rgba(207, 106, 4, 0.881);
 }
 
 #right {
     width: 20em;
+    margin: 0 0 0 -55px;
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
@@ -91,8 +97,12 @@ nav {
     border: none;
     background: transparent;
     font-size: 17px;
-    padding: 0 0 0 20px;
+    /* padding: 0 0 0 20px; */
 
+}
+
+#right button:hover{
+    color: rgb(246,139,30);
 }
 
 #one {
@@ -123,7 +133,7 @@ nav {
     height: 25em;
     width: 25em;
     /* background-color: red; */
-    background-image: url(Desktop_Homepage_Slider__712x384.jpg);
+    background-image: url(../jumia/image/Desktop_Homepage_Slider__712x384.jpg);
     flex-grow: 1;
     flex-basis: 200;
     border-radius: 5px;
@@ -143,7 +153,7 @@ nav {
     height: 12em;
     margin-top: 13em;
     /* background-color: white; */
-    background-image: url(shop_earn.png);
+    background-image: url(../jumia/image/shop_earn.png);
     background-size: cover;
     flex-grow: 1;
     flex-basis: 200;
